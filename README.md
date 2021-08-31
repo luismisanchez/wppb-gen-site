@@ -1,4 +1,13 @@
 [![Dependency Status](https://david-dm.org/tmeister/wppb-gen-site.svg)](https://david-dm.org/tmeister/wppb-gen-site)
+
+All credits shoud go to https://github.com/Tmeister. Thanks for the good job mate!
+
+If you are planning to use this fork you should consider that the plugin source code is downloaded from my own fork
+(https://github.com/luismisanchez/WordPress-Plugin-Boilerplate) not the original one (https://github.com/DevinVinson/WordPress-Plugin-Boilerplate)
+
+Thanks too https://github.com/DevinVinson for the original Boilerplate. Amazing job.
+
+Changes would be documented on this Readme file. See [changelog](#changelog). 
 ___
 
 # WordPress Plugin Boilerplate Generator
@@ -22,4 +31,14 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 
 Comments and requests at [@tmeister](https://twitter.com/tmeister) or noone at tmeister dot net
 
+# <a name="changelog"></a>Changelog
+
+* 05/31/2021 
+    - Forked from https://github.com/Tmeister/wppb-gen-site
+    - Added Description field
+---
+* (3 July 2015). Flattened the folder structure so there is no .org repo parent folder.
+* (4 September 2014). Updating the `README` with Windows symbolic link instructions.
+* (3 September 2014). Updating the `README` to describe how to install the Boilerplate.
+* (1 September 2014). Initial Release.
 
