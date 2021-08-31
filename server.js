@@ -250,8 +250,14 @@ clean.start();
  * GET PLUGIN CODE FROM GITHUB
  */
 var getSourceCode = function() {
+  // var repo = {
+  //   user: 'DevinVinson',
+  //   repo: 'WordPress-Plugin-Boilerplate',
+  //   ref: 'master'
+  // };
+
   var repo = {
-    user: 'DevinVinson',
+    user: 'luismisanchez',
     repo: 'WordPress-Plugin-Boilerplate',
     ref: 'master'
   };
