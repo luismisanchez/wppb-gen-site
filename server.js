@@ -84,6 +84,9 @@ app
     pluginNameInstance = pluginSlug.replace(/-/gi, '_');
     pluginNameVersion = (pluginNameInstance + '_VERSION').toUpperCase();
     pluginAuthorFull = pluginAuthor + ' <' + pluginAuthorEmail + '>';
+    pluginDescription = String(data.description).length
+        ? data.description
+        : "This is a short description of what the plugin does. It's displayed in the WordPress admin area.";
 
     destination =
       process.cwd() + '/tmp/' + pluginSlug + '-' + new Date().getTime();
@@ -204,6 +207,17 @@ app
           recursive: true,
           silent: true
         });
+
+        // find Plugin Description
+        replace({
+          regex: 'Plugin_Description',
+          replacement: pluginDescription,
+          paths: [destination + '/' + pluginSlug + '/' + pluginSlug + '.php'],
+          recursive: false,
+          silent: true
+        });
+
+
 
         //Replace done ZIP it
 
