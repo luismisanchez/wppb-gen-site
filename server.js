@@ -49,6 +49,7 @@ app
     var pluginSlug = '';
     var pluginName = '';
     var pluginURI = '';
+    var pluginUpdateURI = '';
     var pluginAuthor = '';
     var pluginAuthorURI = '';
     var pluginDescription = '';
@@ -71,6 +72,9 @@ app
     pluginURI = String(data.uri).length
       ? data.uri
       : 'http://example.com/amazing-plugin-uri/';
+    pluginUpdateURI = String(data.updateuri).length
+        ? 'Update URI:        ' + data.updateuri
+        : '';
     pluginAuthor = String(data.author.name).length
       ? data.author.name
       : 'Plugin Author';
@@ -217,6 +221,15 @@ app
           silent: true
         });
 
+        // Plugin Update URI. Since WP-5.8
+        // https://make.wordpress.org/core/2021/06/29/introducing-update-uri-plugin-header-in-wordpress-5-8/
+        replace({
+          regex: "PLUGIN_UPDATE_URI",
+          replacement: pluginUpdateURI,
+          paths: [destination + '/' + pluginSlug + '/' + pluginSlug + '.php'],
+          recursive: true,
+          silent: true
+        });
 
 
         //Replace done ZIP it
