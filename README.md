@@ -33,7 +33,9 @@ Comments and requests at [@tmeister](https://twitter.com/tmeister) or noone at t
 
 # <a name="changelog"></a>Changelog
 
-* 05/31/2021 
+* 09/01/2021
+  - Added Update URI field. Since WP 5.8. See https://make.wordpress.org/core/2021/06/29/introducing-update-uri-plugin-header-in-wordpress-5-8/
+* 08/31/2021 
     - Forked from https://github.com/Tmeister/wppb-gen-site
     - Added Description field
 ---
